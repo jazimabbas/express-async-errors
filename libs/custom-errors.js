@@ -15,4 +15,8 @@ class NotFoundError extends HttpError {
   statusCode = 404;
 }
 
-module.exports = { HttpError, BadRequestError, NotFoundError };
+class UnauthorizedError extends HttpError {
+  statusCode = 401;
+}
+
+module.exports = { HttpError, BadRequestError, NotFoundError, UnauthorizedError };
